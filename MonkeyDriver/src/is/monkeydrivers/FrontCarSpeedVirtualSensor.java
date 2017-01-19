@@ -34,13 +34,9 @@ public class FrontCarSpeedVirtualSensor implements VirtualSensor {
     }
 
     private void typeOfMessage(Message message, Measurement measurement) {
-        if (isSpeed(message)) measurement.setSpeed(((SpeedMessage)message).getSpeed());
+        if (message.type().equals("speed")) measurement.setSpeed(((SpeedMessage)message).getSpeed());
         else if (message.type().equals("distance")) measurement.setFrontCarDistance(((DistanceMessage)message).getDistance());
         else if (message.type().equals("plate")) measurement.setFrontCarPlate(((PlateMessage)message).getPlate());
-    }
-
-    private boolean isSpeed(Message message) {
-        return message.type().equals("speed");
     }
 
     private Measurement createMeasurement(Message message) {
