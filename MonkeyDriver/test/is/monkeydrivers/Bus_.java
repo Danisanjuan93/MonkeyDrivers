@@ -29,7 +29,6 @@ public class Bus_ {
 
         Message foo = mock(Message.class);
         doReturn("foo").when(foo).type();
-
         Message fii = mock(Message.class);
         doReturn("fii").when(fii).type();
 
@@ -48,9 +47,11 @@ public class Bus_ {
         doReturn("foo").when(foo).type();
         Subscriber subscriber1 = mock(Subscriber.class);
         Subscriber subscriber2 = mock(Subscriber.class);
+
         bus.subscribe(subscriber1, "foo");
         bus.subscribe(subscriber2, "foo");
         bus.send(foo);
+
         verify(subscriber1, times(1)).receiveMessage(foo);
         verify(subscriber2, times(1)).receiveMessage(foo);
 

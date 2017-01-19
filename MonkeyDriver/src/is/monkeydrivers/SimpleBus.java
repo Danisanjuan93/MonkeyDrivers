@@ -13,9 +13,11 @@ public class SimpleBus implements Bus {
     @Override
     public void send(Message message) {
         if(!subscribers.containsKey(message.type()))return;
-        for (Subscriber subscriber :
-                subscribers.get(message.type())) {
-            System.out.println(message.type());
+        subscriberWillReceiveMessage(message);
+    }
+
+    private void subscriberWillReceiveMessage(Message message) {
+        for (Subscriber subscriber : subscribers.get(message.type())) {
             subscriber.receiveMessage(message);
         }
     }
@@ -25,7 +27,7 @@ public class SimpleBus implements Bus {
     }
     @Override
     public void subscribe(Subscriber subscriber, String type) {
-        if (!subscribers.containsKey(type)) subscribers.put(type, new ArrayList<Subscriber>());
+        if (!subscribers.containsKey(type)) subscribers.put(type, new ArrayList<>());
         subscribersOf(type).add(subscriber);
     }
 
