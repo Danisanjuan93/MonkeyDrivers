@@ -56,7 +56,7 @@ public class FrontCarDistanceSensor_ {
     @Test
     public void should_not_set_message_to_bus_when_speed_returns_speed() throws Exception {
 
-        /*Subscriber subscriberSpeed= mock(Subscriber.class);
+        Subscriber subscriberSpeed= mock(Subscriber.class);
         bus.subscribe(subscriberSpeed,"speed");
         SpeedMessage speed = mock(SpeedMessage.class);
         FrontCarSpeedVirtualSensor frontCarSpeedVirtualSensor = new FrontCarSpeedVirtualSensor(bus);
@@ -64,7 +64,7 @@ public class FrontCarDistanceSensor_ {
         frontCarSpeedVirtualSensor.receiveMessage(message);
         sleep(5000);
         verify(speed,times(1)).getSpeed();
-        verify(bus,times(1)).send(any(SpeedMessage.class));*/
+        verify(bus,times(1)).send(any(SpeedMessage.class));
 
     }
 }
