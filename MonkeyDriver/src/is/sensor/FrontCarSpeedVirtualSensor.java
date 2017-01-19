@@ -1,4 +1,10 @@
-package is.monkeydrivers;
+package is.sensor;
+
+import is.is.message.DistanceMessage;
+import is.is.message.Message;
+import is.is.message.PlateMessage;
+import is.is.message.SpeedMessage;
+import is.bus.Bus;
 
 import java.util.HashMap;
 import java.util.Map;

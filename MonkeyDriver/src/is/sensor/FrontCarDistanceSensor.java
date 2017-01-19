@@ -1,5 +1,10 @@
-package is.monkeydrivers;
+package is.sensor;
 
+
+import is.is.message.DistanceMessage;
+import is.is.message.Message;
+import is.bus.Bus;
+import is.monkeydrivers.DistanceDevice;
 
 public class FrontCarDistanceSensor implements Sensor {
     private final Bus bus;

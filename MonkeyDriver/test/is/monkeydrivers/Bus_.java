@@ -1,5 +1,8 @@
 package is.monkeydrivers;
 
+import is.bus.Bus;
+import is.bus.SimpleBus;
+import is.is.message.Message;
 import org.junit.Before;
 import org.junit.Test;
 import static org.mockito.Mockito.*;

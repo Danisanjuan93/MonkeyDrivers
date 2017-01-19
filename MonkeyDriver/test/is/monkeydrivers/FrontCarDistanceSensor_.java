@@ -1,5 +1,11 @@
 package is.monkeydrivers;
 
+import is.bus.Bus;
+import is.is.message.DistanceMessage;
+import is.is.message.Message;
+import is.is.message.SpeedMessage;
+import is.sensor.FrontCarDistanceSensor;
+import is.sensor.FrontCarSpeedVirtualSensor;
 import org.junit.Before;
 import org.junit.Test;
 

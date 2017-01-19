@@ -1,4 +1,8 @@
-package is.monkeydrivers;
+package is.bus;
+
+import is.bus.Bus;
+import is.is.message.Message;
+import is.monkeydrivers.Subscriber;
 
 import java.util.ArrayList;
 import java.util.HashMap;

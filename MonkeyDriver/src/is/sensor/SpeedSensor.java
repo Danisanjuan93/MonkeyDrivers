@@ -1,4 +1,8 @@
-package is.monkeydrivers;
+package is.sensor;
+
+import is.bus.Bus;
+import is.is.message.Message;
+import is.is.message.SpeedMessage;
 
 public class SpeedSensor implements Sensor {
     private final Bus bus;

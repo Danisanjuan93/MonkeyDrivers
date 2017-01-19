@@ -1,5 +1,9 @@
-package is.monkeydrivers;
+package is.sensor;
 
+
+import is.is.message.Message;
+import is.is.message.PlateMessage;
+import is.bus.Bus;
 
 public class FrontCarPlateVirtualSensor implements VirtualSensor {
 

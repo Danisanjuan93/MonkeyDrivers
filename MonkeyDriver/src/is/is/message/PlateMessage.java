@@ -1,4 +1,6 @@
-package is.monkeydrivers;
+package is.is.message;
+
+import is.is.message.Message;
 
 public class PlateMessage implements Message {
     private String plate;

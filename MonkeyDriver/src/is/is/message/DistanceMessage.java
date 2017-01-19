@@ -1,4 +1,4 @@
-package is.monkeydrivers;
+package is.is.message;
 
 public class DistanceMessage implements Message {
     private float distance;

@@ -1,4 +1,7 @@
-package is.monkeydrivers;
+package is.bus;
+
+import is.is.message.Message;
+import is.monkeydrivers.Subscriber;
 
 public interface Bus {
     void subscribe(Subscriber subscriber, String types);
